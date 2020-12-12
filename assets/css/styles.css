@@ -64,6 +64,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
+  --body-color: #1d2521;
+  --container-color: #27302c;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
@@ -94,10 +112,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/*========== Variables Dark theme ==========*/
-
-/*========== Button Dark/Light ==========*/
 
 /*========== CLASS CSS ==========*/
 .section {
@@ -505,6 +519,11 @@ img {
   }
   .nav__toggle {
     display: none;
+  }
+
+  .change-theme {
+    position: initial;
+    margin-left: var(--mb-2);
   }
 
   .home__container {
